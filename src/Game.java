@@ -13,8 +13,10 @@ public class Game extends JFrame implements KeyListener, MouseListener, MouseMot
     Image dbImage;
     Graphics dbg;
 	
-    // Screen Size
+    /** Variables for Screen Size */
     int GWIDTH = 400, GHEIGHT = 300;
+    
+    /** Dimension of GWIDTH * GHEIGHT */
     Dimension screenSize = new Dimension(GWIDTH, GHEIGHT);
     
 	// Game
@@ -43,7 +45,6 @@ public class Game extends JFrame implements KeyListener, MouseListener, MouseMot
     
     /**
      * Program Entrance
-     * @param args
      */
 	public static void main(String[] args) {
 		game = new Game();
@@ -62,7 +63,6 @@ public class Game extends JFrame implements KeyListener, MouseListener, MouseMot
     
 	/**
 	 * Draws the current screen
-	 * @param g
 	 */
     public void draw(Graphics g) {
         super.paint(g);
