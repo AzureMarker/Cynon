@@ -6,7 +6,7 @@ import javax.swing.JFrame;
 /**
  * @author Mcat12
  */
-public class Game extends JFrame implements KeyListener, MouseListener, MouseMotionListener, MouseWheelListener, WindowListener{
+public class Game extends JFrame implements KeyListener, MouseListener, MouseMotionListener, MouseWheelListener, WindowListener {
 	private static final long serialVersionUID = 3935942281452509181L;
 	
 	// Double Buffering
@@ -66,7 +66,8 @@ public class Game extends JFrame implements KeyListener, MouseListener, MouseMot
 	 */
     public void draw(Graphics g) {
         super.paint(g);
-        screen.displayOutput(g);
+        if(screen != null)
+        	screen.displayOutput(g);
         repaint();
     }
 	
